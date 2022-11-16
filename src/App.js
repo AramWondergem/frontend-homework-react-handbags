@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Button from "./Components/Button";
 import Product from "./Components/Product";
+import Tile from "./Components/Tile";
 
 
 
@@ -11,9 +12,9 @@ function App() {
         <>
             <h1>Handbags & Purses</h1>
             <nav>
-                <Button nameButton="To the collection"/>
-                <Button nameButton="Shop all bags"/>
-                <Button nameButton="Pre-orders"/>
+                <Button nameButton="To the collection" disabled={false}/>
+                <Button nameButton="Shop all bags" disabled={false}/>
+                <Button nameButton="Pre-orders" disabled={true}/>
             </nav>
             <main>
                 <Product
@@ -37,6 +38,25 @@ function App() {
                     nameProduct="The trendy bag"
                     price="150"/>
             </main>
+            <footer>
+                <Tile>
+                    <h2>The brand</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, inventore suscipit. Aliquid asperiores perspiciatis tenetur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ducimus itaque nemo nisi, nulla quasi?</p>
+                </Tile>
+                <Tile>
+                    <img src={require("./assets/brand.png").default} alt="brand logo"/>
+                </Tile>
+                <Tile>
+                    <img src={require("./assets/our_story.png").default} alt="the two designers huging"/>
+                </Tile>
+                <Tile>
+                    <h2>Our story</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur distinctio eos, eveniet impedit ipsam minima, nihil nisi recusandae tenetur unde, voluptates voluptatibus voluptatum. A animi cumque dolorem est facilis incidunt maxime, neque placeat, quasi, reprehenderit similique totam veritatis voluptates!</p>
+                </Tile>
+
+
+            </footer>
         </>
 
     );

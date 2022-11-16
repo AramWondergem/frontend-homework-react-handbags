@@ -1,8 +1,10 @@
 import React from 'react';
 
-function Tile(props) {
+function Tile({ children }) {
     return (
-        <div></div>
+        <section>
+            {children}
+        </section>
     );
 }
 
