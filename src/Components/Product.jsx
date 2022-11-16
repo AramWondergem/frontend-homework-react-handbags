@@ -1,13 +1,13 @@
 import React from 'react';
-import handbag1 from '../assets/bag_1.png'
+// import handbag1 from '../assets/bag_1.png'
 
-function Product({productTag, nameProduct, price}) {
+function Product({productTag, srcPath, nameProduct, price}) {
     return (
         <article>
             <span>{productTag}</span>
-            <img src={handbag1} alt={nameProduct}/>
+            <img src={require(`../assets/${srcPath}`).default} alt={nameProduct}/>
             <p>{nameProduct}</p>
-            <h4>€{price}.-</h4>
+            <h4>€{price},-</h4>
         </article>
     );
 }
