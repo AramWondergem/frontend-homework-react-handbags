@@ -3,7 +3,10 @@ import './App.css';
 import Button from "./Components/Button";
 import Product from "./Components/Product";
 import Tile from "./Components/Tile";
-
+import bag1 from "./assets/bag_1.png"
+import bag2 from "./assets/bag_2.png"
+import bag3 from "./assets/bag_3.png"
+import bag4 from "./assets/bag_4.png"
 
 
 
@@ -19,22 +22,22 @@ function App() {
             <main>
                 <Product
                     productTag="Best seller"
-                    srcPath="bag_1.png"
+                    srcPath={bag1}
                     nameProduct="The handy bag"
                     price="400"/>
                 <Product
                     productTag="Best seller"
-                    srcPath="bag_2.png"
+                    srcPath={bag2}
                     nameProduct="The stylish bag"
                     price="250"/>
                 <Product
                     productTag="New collection"
-                    srcPath="bag_3.png"
+                    srcPath={bag3}
                     nameProduct="The simple bag"
                     price="300"/>
                 <Product
                     productTag="New collection"
-                    srcPath="bag_4.png"
+                    srcPath={bag4}
                     nameProduct="The trendy bag"
                     price="150"/>
             </main>
